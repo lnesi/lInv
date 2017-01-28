@@ -1,6 +1,11 @@
 # lInv (V 0.1)
 
-Invoice System in Angular 2 and Laravel. This project was created for study porpuses this is not a fully oprational system. Please do not try to replicate until futher notice.
+Invoice System in Angular 2 and Laravel. 
+
+## Warning
+This project was created for study porpuses this is not a fully operational system. 
+
+Please do not try to replicate until futher notice.
 
 -----
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.25.5.
