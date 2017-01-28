@@ -10,14 +10,14 @@
             <a class="nav-link dropdown-toggle" id="dropdownUser"  ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
             <i class="fa fa-fw fa-cogs"></i> Settings</a>
             <div class="dropdown-menu" aria-labelledby="dropdownUser">
-              <a class="dropdown-item" href="#">Custom Fields</a>
-              <a class="dropdown-item" href="#">Email Templates</a>
-              <a class="dropdown-item" href="#">Payment Methods</a>
-              <a class="dropdown-item" href="#">Tax Rates</a>
-              <a class="dropdown-item" href="#">User Accounts</a>
+              <a class="dropdown-item" routerLink="/system/custom_fields" routerLinkActive="active">Custom Fields</a>
+              <a class="dropdown-item" routerLink="/system/email_templates" routerLinkActive="active">Email Templates</a>
+              <a class="dropdown-item" routerLink="/system/payment_methods" routerLinkActive="active">Payment Methods</a>
+              <a class="dropdown-item" routerLink="/system/tax_rates" routerLinkActive="active">Tax Rates</a>
+              <a class="dropdown-item" routerLink="/system/users" routerLinkActive="active">User Accounts</a>
               <li class="dropdown-divider"></li>
-              <a class="dropdown-item" href="#">System Settings</a>
-              <a class="dropdown-item" href="#">Import Data</a>
+              <a class="dropdown-item" routerLink="/system/settings" routerLinkActive="active">System Settings</a>
+              <a class="dropdown-item" routerLink="/system/import" routerLinkActive="active">Import Data</a>
             </div>
           </li>
         </ul>
