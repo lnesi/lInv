@@ -1,0 +1,40 @@
+
+<button class="navbar-toggler navbar-toggler-right hidden-lg-up collapsed" type="button"  (click)="toggleCollapse()" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#">lInv</a>
+
+      <div class="collapse navbar-collapse"  [class.collapse]="isCollapsed">
+        <ul class="navbar-nav mr-auto">
+         <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="dropdownUser"  ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-cogs"></i> Settings</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownUser">
+              <a class="dropdown-item" href="#">Custom Fields</a>
+              <a class="dropdown-item" href="#">Email Templates</a>
+              <a class="dropdown-item" href="#">Payment Methods</a>
+              <a class="dropdown-item" href="#">Tax Rates</a>
+              <a class="dropdown-item" href="#">User Accounts</a>
+              <li class="dropdown-divider"></li>
+              <a class="dropdown-item" href="#">System Settings</a>
+              <a class="dropdown-item" href="#">Import Data</a>
+            </div>
+          </li>
+        </ul>
+         <ul class="navbar-nav  mr-sm-2">
+        <li class="nav-item">
+            <a class="nav-link " href="#"><i class="fa fa-fw fa-question-circle"></i> Help</a>
+          </li>
+         
+         <li class="nav-item dropdown" ngbDropdown>
+            <a class="nav-link dropdown-toggle" id="dropdownUser"  ngbDropdownToggle aria-haspopup="true" aria-expanded="false">
+            <i class="fa fa-fw fa-user"></i> Current User</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownUser">
+              <a class="dropdown-item" routerLink="/profile" routerLinkActive="active" >Profile</a>
+              <li class="dropdown-divider"></li>
+              <a class="dropdown-item" href="#">Sign Out</a>
+            </div>
+          </li>
+         
+         </ul>
+      </div>
