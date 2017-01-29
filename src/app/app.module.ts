@@ -19,8 +19,18 @@ import {ProductsComponent}   from './pages/products/products.component';
 import {PaymentsComponent}   from './pages/payments/payments.component';
 import {ReportsComponent}    from './pages/reports/reports.component';
 import {InvoicesComponent}   from './pages/invoices/invoices.component';
-import {ProfileComponent}   from './pages/profile/profile.component';
+import {ProfileComponent}    from './pages/profile/profile.component';
 import {ErrorComponent}      from './pages/error/error.component';
+
+//Pages System
+
+import {CustomFieldsComponent}  from './pages/settings/custom_fields/custom_fields.component';
+import {EmailTemplatesComponent}  from './pages/settings/email_templates/email_templates.component';
+import {ImportComponent}  from './pages/settings/import/import.component';
+import {PaymentMethodsComponent}  from './pages/settings/payment_methods/payment_methods.component';
+import {SystemSettingsComponent}  from './pages/settings/system/system_settings.component';
+import {TaxRatesComponent}  from './pages/settings/tax_rates/tax_rates.component';
+import {UsersComponent}  from './pages/settings/users/users.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +45,13 @@ import {ErrorComponent}      from './pages/error/error.component';
     ClientsComponent,
     InvoicesComponent,
     ProfileComponent,
+    CustomFieldsComponent,
+    EmailTemplatesComponent,
+    ImportComponent,
+    PaymentMethodsComponent,
+    SystemSettingsComponent,
+    TaxRatesComponent,
+    UsersComponent,
     ErrorComponent
   ],
   imports: [
