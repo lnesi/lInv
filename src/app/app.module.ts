@@ -10,7 +10,9 @@ import { AppComponent }                  from './app.component';
 //-- App components
 import { TopNavComponent }               from './components/topnav.component';
 import { MainSideComponent }             from './components/mainside.component';
-import {NgbdModalContentDelete}          from  './components/common/deleteModal.component'
+import {NgbdModalContentConfirm}         from  './components/common/confirmModal.component'
+import {AlertComponent}                  from './components/common/alert.component';
+
 //--Pages
 import {DashboardComponent}              from './pages/dashboard/dashboard.component';
 import {ClientsComponent}                from './pages/clients/clients.component';
@@ -31,7 +33,6 @@ import {PaymentMethodsComponent}        from './pages/settings/payment_methods/p
 import {SystemSettingsComponent}        from './pages/settings/system/system_settings.component';
 import {TaxRatesComponent}              from './pages/settings/tax_rates/tax_rates.component';
 import {UsersComponent}                 from './pages/settings/users/users.component';
-
 import {EditUserComponent}              from './pages/settings/users/edit.component';
 
 
@@ -40,6 +41,8 @@ import {EditUserComponent}              from './pages/settings/users/edit.compon
   declarations: [
     AppComponent,
     TopNavComponent,
+    NgbdModalContentConfirm,
+    AlertComponent,
     MainSideComponent,
     DashboardComponent,
     QuotesComponent,
@@ -57,7 +60,6 @@ import {EditUserComponent}              from './pages/settings/users/edit.compon
     TaxRatesComponent,
     UsersComponent,
     EditUserComponent,
-    NgbdModalContentDelete,
     ErrorComponent
   ],
   imports: [
@@ -67,7 +69,7 @@ import {EditUserComponent}              from './pages/settings/users/edit.compon
     HttpModule,
     AppRouting
   ],
-  entryComponents: [NgbdModalContentDelete],
+  entryComponents: [NgbdModalContentConfirm,AlertComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
